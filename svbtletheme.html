@@ -23,8 +23,8 @@
         <link href='http://static.tumblr.com/dbek3sy/VtLmbsu90/socialico.css' rel='stylesheet' type='text/css'>
         <!-- Meta -->
         <meta name="color:Sidebar Colour" content="#ffffff" />
-        <meta name="image:Logo 200x200" content="http://static.tumblr.com/morei1o/Yrbmmupfl/logo_200x200.png" />
-        <meta name="image:Logo Retina 400x400" content="http://static.tumblr.com/morei1o/us2mmuph2/logo_400x400.png" />
+        <meta name="image:Logo 200x200" content="http://static.tumblr.com/trgvblh/z8yms5c5x/round-jim-dalton_200x200.png" />
+        <meta name="image:Logo Retina 400x400" content="http://static.tumblr.com/trgvblh/lcQms5c53/round-jim-dalton_400x400.png" />
         <meta name="color:Blog Name Colour" content="#282828" />
         <meta name="color:Description Colour" content="#282828" />
         <meta name="color:Highlight Colour" content="#73b6e5" />
@@ -36,27 +36,121 @@
         <meta name="text:Disqus Shortname" content="" />
         <meta name="if:Enable Comment Count" content="1" />
         <!-- For Syntax Highlighting -->
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"></link>  
-        <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>  
-        <script>
-            function styleCode() {
-                if (typeof disableStyleCode != 'undefined') { return; }
-        
-                var a = false;
-                
-                $('code').each(function() {
-                    if (!$(this).hasClass('prettyprint') && !$(this).hasClass('uglyprint')) {
-                        $(this).addClass('prettyprint');
-                        a = true;
-                    }
-                });
-        
-                if (a) { prettyPrint(); } 
-            }
-    
-            $(function() {styleCode();});
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+        <script type="text/javascript">
+          hljs.initHighlightingOnLoad();
         </script>
+        <style type="text/css">
+          pre {
+            margin: 10px 0 20px;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+          }
+
+          code {
+            font: 13px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+
+          }
+
+          pre code {
+            display: block;
+            background: #002b36; color: #839496;
+            font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+            padding: 15px;
+          }
+
+          pre .comment,
+          pre .template_comment,
+          pre .diff .header,
+          pre .doctype,
+          pre .pi,
+          pre .lisp .string,
+          pre .javadoc {
+            color: #586e75;
+            font-style: italic;
+          }
+
+          pre .keyword,
+          pre .winutils,
+          pre .method,
+          pre .addition,
+          pre .css .tag,
+          pre .request,
+          pre .status,
+          pre .nginx .title,
+          #post pre .nginx .title
+          {
+            color: #859900;
+            font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+          }
+
+          pre .number,
+          pre .command,
+          pre .string,
+          pre .tag .value,
+          pre .rules .value,
+          pre .phpdoc,
+          pre .tex .formula,
+          pre .regexp,
+          pre .hexcolor {
+            color: #2aa198;
+          }
+
+          pre .title,
+          #post pre .title,
+          pre .localvars,
+          pre .chunk,
+          pre .decorator,
+          pre .built_in,
+          pre .identifier,
+          pre .vhdl .literal,
+          pre .id,
+          pre .css .function {
+            color: #268bd2;
+            font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+          }
+
+          pre .attribute,
+          pre .variable,
+          pre .lisp .body,
+          pre .smalltalk .number,
+          pre .constant,
+          pre .class .title,
+          #post pre .class .title,
+          pre .parent,
+          pre .haskell .type {
+            color: #b58900;
+          }
+
+          pre .preprocessor,
+          pre .preprocessor .keyword,
+          pre .shebang,
+          pre .symbol,
+          pre .symbol .string,
+          pre .diff .change,
+          pre .special,
+          pre .attr_selector,
+          pre .important,
+          pre .subst,
+          pre .cdata,
+          pre .clojure .title,
+          #post pre .clojure .title,
+          pre .css .pseudo {
+            color: #cb4b16;
+            font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+          }
+
+          pre .deletion {
+            color: #dc322f;
+          }
+
+          pre .tex .formula {
+            background: #073642;
+          }
+        </style>
         <!-- Facebook Open Graph -->
         <meta property="og:site_name" content="{Title}"/>
         {block:PermalinkPage}

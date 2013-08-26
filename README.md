@@ -1,6 +1,8 @@
 svbtle-tumblr-theme
 ===================
 
+**Note:** This is a fork I'm using for jsdalton.tumblr.com.
+
 <p>Svbtle Theme is a responsive Tumblr theme inspired by Svbtle, the invite-only publishing network.
 You can see a preview here: http://svbtletheme.tumblr.com</p>
 <ul>
